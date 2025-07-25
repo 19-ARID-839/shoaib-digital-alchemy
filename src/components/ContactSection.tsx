@@ -44,8 +44,8 @@ const ContactSection = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "shoiab@roxtechhub.com",
-      href: "mailto:shoiab@roxtechhub.com",
+      value: "shoaib@roxtechhub.com",
+      href: "mailto:shoaib@roxtechhub.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
