@@ -10,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-hero" style={{ paddingTop: '80px' }}>
       {/* Background Glow Effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-glow rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
@@ -20,7 +20,7 @@ const HeroSection = () => {
           
           {/* Text Content */}
           <div className="fade-in">
-            <div className="flex items-center gap-3 mb-6">
+            {/* <div className="flex items-center gap-3 mb-6">
               
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20">
                 <a href="https://www.upwork.com/freelancers/~015b2c8eb8b2b36ddc?companyReference=1281633502634418177&mp_source=share" target="_blank" rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const HeroSection = () => {
                  🚀 Available for Projects
                 </a>
               </Badge>
-            </div>
+            </div> */}
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-foreground">Hi, I'm </span>
