@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Text Content */}
-          <div className="fade-in">
+{/*           <div className="fade-in">
             <div className="flex items-center gap-3 mb-6">
               
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20">
@@ -28,7 +28,7 @@ const HeroSection = () => {
                  🚀 Available for Projects
                 </a>
               </Badge>
-            </div>
+            </div> */}
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="text-foreground">Hi, I'm </span>
