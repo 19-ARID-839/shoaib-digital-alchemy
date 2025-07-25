@@ -81,7 +81,7 @@ const HeroSection = () => {
                 </Button>
                   </a>
                  <a
-                  href="href: "https://www.linkedin.com/in/-malikshoaib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  href="href: "https://www.linkedin.com/in/-malikshoaib"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
