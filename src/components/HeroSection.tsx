@@ -21,6 +21,11 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="fade-in">
             <div className="flex items-center gap-3 mb-6">
+              <a 
+                href="https://www.upwork.com/freelancers/~015b2c8eb8b2b36ddc?companyReference=1281633502634418177&mp_source=share" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20">
                 🚀 Available for Projects
               </Badge>
