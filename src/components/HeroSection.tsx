@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import profileHero from '@/assets/profile-hero.jpg';
-
+// hero
 const HeroSection = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
