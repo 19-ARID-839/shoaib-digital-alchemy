@@ -5,10 +5,10 @@ import { Star, Quote } from 'lucide-react';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "CEO, TechStart Inc.",
+      name: "Scarlett asla",
+      role: "UpWork",
       company: "TechStart Inc.",
-      content: "Muhammad delivered exceptional results on our e-commerce platform. His technical expertise in the MERN stack and attention to detail exceeded our expectations. The project was completed on time and within budget.",
+      content: "Highly skilled and professional freelancer!  Shoaib excellently built an AI-powered chat feature with MERN stack. He integrated Open AI API smoothly. I would love to hire him again for my future full stack and AI projects.",
       rating: 5,
       avatar: "SJ"
     },
@@ -28,30 +28,7 @@ const TestimonialsSection = () => {
       rating: 5,
       avatar: "ER"
     },
-    {
-      name: "Michael Thompson",
-      role: "Marketing Director",
-      company: "GrowthCorp",
-      content: "Muhammad's digital marketing strategies transformed our online presence. His data-driven approach and technical background gave us insights we never had before. Our conversion rates increased by 150%.",
-      rating: 5,
-      avatar: "MT"
-    },
-    {
-      name: "Lisa Park",
-      role: "CTO",
-      company: "InnovateAI",
-      content: "Muhammad's AI development skills are outstanding. He built a custom NLP solution that automated 80% of our content moderation. His code quality and documentation are top-notch.",
-      rating: 5,
-      avatar: "LP"
-    },
-    {
-      name: "James Wilson",
-      role: "Business Owner",
-      company: "LocalBiz",
-      content: "From design to development to marketing, Muhammad provided a complete solution for our business. His full-stack expertise and understanding of business needs make him a valuable partner.",
-      rating: 5,
-      avatar: "JW"
-    }
+ 
   ];
 
   return (
@@ -104,7 +81,7 @@ const TestimonialsSection = () => {
                   <div>
                     <div className="font-bold text-foreground">{testimonial.name}</div>
                     <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                    <div className="text-xs text-primary font-medium">{testimonial.company}</div>
+                    {/* <div className="text-xs text-primary font-medium">{testimonial.company}</div> */}
                   </div>
                 </div>
               </CardContent>
@@ -116,7 +93,7 @@ const TestimonialsSection = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="fade-in-delay-1">
-              <div className="text-3xl font-bold hero-text mb-2">50+</div>
+              <div className="text-3xl font-bold hero-text mb-2">27+</div>
               <div className="text-muted-foreground">Happy Clients</div>
             </div>
             <div className="fade-in-delay-2">
@@ -128,7 +105,7 @@ const TestimonialsSection = () => {
               <div className="text-muted-foreground">Project Success</div>
             </div>
             <div className="fade-in-delay-1">
-              <div className="text-3xl font-bold hero-text mb-2">24h</div>
+              <div className="text-3xl font-bold hero-text mb-2">6h</div>
               <div className="text-muted-foreground">Response Time</div>
             </div>
           </div>
