@@ -71,15 +71,33 @@ const HeroSection = () => {
             <div className="flex items-center gap-4">
               <span className="text-muted-foreground font-medium">Connect:</span>
               <div className="flex gap-3">
+                 <a
+                  href="https://github.com/19-ARID-839"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
                   <Github className="h-5 w-5" />
                 </Button>
+                  </a>
+                 <a
+                  href="href: "https://www.linkedin.com/in/-malikshoaib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </Button>
+</a>
+                    <a
+                  href="mailto:shoaib@roxtechhub.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
                   <Mail className="h-5 w-5" />
                 </Button>
+                      </a>
               </div>
             </div>
           </div>
