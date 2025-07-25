@@ -33,10 +33,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:hello@muhammadshoaib.dev", label: "Email" }
+    { icon: <Github className="h-5 w-5" />, href: "https://github.com/19-ARID-839", label: "GitHub" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/-malikshoaib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", label: "LinkedIn" },
+    { icon: <Twitter className="h-5 w-5" />, href: "https://x.com/shoaibmalik839?s=11", label: "Twitter" },
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:shoiab@roxtechhub.com", label: "Email" }
   ];
 
   const scrollToSection = (href: string) => {
@@ -119,10 +119,10 @@ const Footer = () => {
         <Separator className="my-8 bg-border/50" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-muted-foreground text-sm">
+       {/* <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="text-muted-foreground text-sm">
             © {currentYear} Muhammad Shoaib. All rights reserved.
-          </div>
+          </div> 
           
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
             <span>Made with</span>
@@ -130,15 +130,15 @@ const Footer = () => {
             <span>and lots of coffee</span>
           </div>
           
-          <div className="flex gap-6 text-sm">
+        <div className="flex gap-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               Privacy Policy
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               Terms of Service
             </a>
-          </div>
-        </div>
+          </div> 
+        </div>  */}
       </div>
     </footer>
   );

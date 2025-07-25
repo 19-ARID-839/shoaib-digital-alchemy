@@ -122,9 +122,9 @@ const ServicesSection = () => {
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { icon: <Globe className="h-6 w-6" />, number: "50+", label: "Projects Completed" },
+            { icon: <Globe className="h-6 w-6" />, number: "27+", label: "Projects Completed" },
             { icon: <Zap className="h-6 w-6" />, number: "5+", label: "Years Experience" },
-            { icon: <Code2 className="h-6 w-6" />, number: "20+", label: "Technologies" },
+            { icon: <Code2 className="h-6 w-6" />, number: "15+", label: "Technologies" },
             { icon: <TrendingUp className="h-6 w-6" />, number: "100%", label: "Client Satisfaction" }
           ].map((stat, index) => (
             <div key={index} className="text-center fade-in-delay-2">

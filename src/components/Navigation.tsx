@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,29 +11,31 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#services', label: 'Services' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#testimonials', label: 'Testimonials' },
-    { href: '#about', label: 'About' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#home", label: "Home" },
+    { href: "#services", label: "Services" },
+    { href: "#projects", label: "Projects" },
+    { href: "#testimonials", label: "Testimonials" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass backdrop-blur-xl' : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "glass backdrop-blur-xl" : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="font-bold text-xl hero-text font-inter">
@@ -51,9 +53,18 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button onClick={() => scrollToSection('#contact')} className="bg-gradient-primary hover:shadow-primary transition-all duration-300">
-              Let's Talk
-            </Button>
+            <a
+              href=" https://wa.me/923485275523"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                onClick={() => scrollToSection("#contact")}
+                className="bg-gradient-primary hover:shadow-primary transition-all duration-300"
+              >
+                Let's Talk
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,7 +74,11 @@ const Navigation = () => {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -81,7 +96,10 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Button onClick={() => scrollToSection('#contact')} className="bg-gradient-primary hover:shadow-primary transition-all duration-300 mt-4">
+              <Button
+                onClick={() => scrollToSection("#contact")}
+                className="bg-gradient-primary hover:shadow-primary transition-all duration-300 mt-4"
+              >
                 Let's Talk
               </Button>
             </div>

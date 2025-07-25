@@ -26,7 +26,7 @@ const AboutSection = () => {
     {
       icon: <BookOpen className="h-6 w-6" />,
       title: "Tech Mentor",
-      description: "Mentored 50+ developers in modern web technologies"
+      description: "Mentoring developers at RoxTechHub."
     },
     {
       icon: <Coffee className="h-6 w-6" />,
@@ -135,7 +135,7 @@ const AboutSection = () => {
             </div>
 
             {/* Download Resume Button */}
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <Button 
                 size="lg" 
                 className="bg-gradient-primary hover:shadow-primary transition-all duration-300"
@@ -150,7 +150,7 @@ const AboutSection = () => {
               >
                 View Portfolio
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

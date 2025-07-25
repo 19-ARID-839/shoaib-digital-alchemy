@@ -1,22 +1,23 @@
-import { useState } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
-import { useToast } from '@/hooks/use-toast';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  Linkedin, 
-  Github, 
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Linkedin,
+  Github,
   Twitter,
   Clock,
-  CheckCircle
-} from 'lucide-react';
+  CheckCircle,
+  Instagram,
+} from "lucide-react";
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,13 +28,14 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
     toast({
       title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+      description:
+        "Thank you for reaching out. I'll get back to you within 24 hours.",
     });
-    
+
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
   };
@@ -42,66 +44,85 @@ const ContactSection = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "hello@muhammadshoaib.dev",
-      href: "mailto:hello@muhammadshoaib.dev"
+      value: "shoiab@roxtechhub.com",
+      href: "mailto:shoiab@roxtechhub.com",
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+92 348 5275523",
+      href: "https://wa.me/923485275523",
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#"
+      value: "Downtown, Giga, Islamabad, PK",
+      href: "#",
     },
     {
       icon: <Clock className="h-5 w-5" />,
       label: "Response Time",
-      value: "Within 24 hours",
-      href: "#"
-    }
+      value: "Within 6 hours",
+      href: "#",
+    },
   ];
 
   const socialLinks = [
     {
       icon: <Github className="h-5 w-5" />,
       label: "GitHub",
-      href: "https://github.com",
-      color: "hover:text-gray-400"
+      href: "https://github.com/19-ARID-839",
+      color: "hover:text-gray-400",
     },
     {
       icon: <Linkedin className="h-5 w-5" />,
       label: "LinkedIn",
-      href: "https://linkedin.com",
-      color: "hover:text-blue-400"
+      href: "https://www.linkedin.com/in/-malikshoaib?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      color: "hover:text-blue-400",
     },
     {
       icon: <Twitter className="h-5 w-5" />,
       label: "Twitter",
-      href: "https://twitter.com",
-      color: "hover:text-blue-400"
-    }
+      href: "https://x.com/shoaibmalik839?s=11",
+      color: "hover:text-blue-400",
+    },
+    // {
+    //   icon: <Instagram className="h-5 w-5" />,
+    //   label: "Instagram",
+    //   href: "https://www.instagram.com/malikshoaib_/",
+    //   color: "hover:text-pink-400",   
+    // }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-section-bg relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-20 bg-section-bg relative overflow-hidden"
+    >
       {/* Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-glow rounded-full filter blur-3xl opacity-10"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-secondary/10 rounded-full filter blur-3xl opacity-10"></div>
 
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-4 px-4 py-2 bg-primary/10 text-primary border-primary/20">
-            🚀 Let's Connect
-          </Badge>
+          <a
+            href=" https://wa.me/923485275523"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Badge
+              variant="secondary"
+              className="mb-4 px-4 py-2 bg-primary/10 text-primary border-primary/20"
+            >
+              🚀 Let's Connect
+            </Badge>
+          </a>
+
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             <span className="hero-text">Let's Build Something Amazing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Ready to turn your ideas into reality? I'm here to help you create 
+            Ready to turn your ideas into reality? I'm here to help you create
             exceptional digital experiences that drive results.
           </p>
         </div>
@@ -110,25 +131,27 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="glass border-primary/10 fade-in">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6 hero-text">Send Me a Message</h3>
-              
+              <h3 className="text-2xl font-bold mb-6 hero-text">
+                Send Me a Message
+              </h3>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name</Label>
-                    <Input 
-                      id="firstName" 
-                      placeholder="John" 
-                      required 
+                    <Input
+                      id="firstName"
+                      placeholder="John"
+                      required
                       className="bg-muted/50 border-primary/20 focus:border-primary"
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName">Last Name</Label>
-                    <Input 
-                      id="lastName" 
-                      placeholder="Doe" 
-                      required 
+                    <Input
+                      id="lastName"
+                      placeholder="Doe"
+                      required
                       className="bg-muted/50 border-primary/20 focus:border-primary"
                     />
                   </div>
@@ -136,37 +159,37 @@ const ContactSection = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="john@example.com" 
-                    required 
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="john@example.com"
+                    required
                     className="bg-muted/50 border-primary/20 focus:border-primary"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Project Inquiry" 
-                    required 
+                  <Input
+                    id="subject"
+                    placeholder="Project Inquiry"
+                    required
                     className="bg-muted/50 border-primary/20 focus:border-primary"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project..." 
-                    required 
+                  <Textarea
+                    id="message"
+                    placeholder="Tell me about your project..."
+                    required
                     className="min-h-32 bg-muted/50 border-primary/20 focus:border-primary resize-none"
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-gradient-primary hover:shadow-primary transition-all duration-300 py-3"
                 >
@@ -190,26 +213,30 @@ const ContactSection = () => {
           <div className="fade-in-delay-1">
             <h3 className="text-2xl font-bold mb-6 hero-text">Get in Touch</h3>
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              I'm always excited to discuss new opportunities and collaborate on innovative projects. 
-              Whether you have a specific idea or just want to explore possibilities, let's start a conversation.
+              I'm always excited to discuss new opportunities and collaborate on
+              innovative projects. Whether you have a specific idea or just want
+              to explore possibilities, let's start a conversation.
             </p>
 
             {/* Contact Info Cards */}
             <div className="space-y-4 mb-8">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="glass border-primary/10 hover:shadow-glow transition-all duration-300">
+                <Card
+                  key={index}
+                  className="glass border-primary/10 hover:shadow-glow transition-all duration-300"
+                >
                   <CardContent className="p-4">
-                    <a 
-                      href={info.href} 
+                    <a
+                      href={info.href}
                       className="flex items-center gap-4 group"
                     >
                       <div className="w-10 h-10 rounded-lg bg-gradient-primary flex items-center justify-center">
-                        <div className="text-white">
-                          {info.icon}
-                        </div>
+                        <div className="text-white">{info.icon}</div>
                       </div>
                       <div>
-                        <div className="text-sm text-muted-foreground">{info.label}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {info.label}
+                        </div>
                         <div className="font-medium group-hover:text-primary transition-colors">
                           {info.value}
                         </div>
@@ -246,8 +273,8 @@ const ContactSection = () => {
                   {[
                     "5+ years of proven expertise",
                     "100% client satisfaction rate",
-                    "24-hour response guarantee",
-                    "End-to-end project delivery"
+                    "6-hour response guarantee",
+                    "End-to-end project delivery",
                   ].map((point, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <CheckCircle className="h-5 w-5 text-primary" />
