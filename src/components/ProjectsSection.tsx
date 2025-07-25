@@ -6,6 +6,9 @@ import projectMern from "@/assets/project-mern.jpg";
 import projectAi from "@/assets/project-ai.jpg";
 import projectMobile from "@/assets/project-mobile.jpg";
 import projectDesign from "@/assets/project-design.jpg";
+import fig from '@/assets/fig.jpeg';
+import rmp from '@/assets/rmp.jpeg';
+import sds from '@/assets/sds.jpeg';
 
 const ProjectsSection = () => {
   const projects = [
@@ -13,7 +16,7 @@ const ProjectsSection = () => {
       title: "Forex Trading & Brokerage Platform",
       description:
         "All in one plateform for forex and crypto trader, it offers realtime market anylsis, trading education and account management for both individual trader and introducing broker.",
-      image: "/src/assets/fig.jpeg",
+      image: fig,
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Word Press"],
       category: "Web Development",
       gradient: "from-primary to-primary-glow",
@@ -22,7 +25,7 @@ const ProjectsSection = () => {
       title: "Jarvis-AI Powered Personal Assistant",
       description:
         "Jarvis, an advance AI Powerd personal assistant, inspired by Ironman's J.A.R.V.I.S. Desiged to listen, understand and respond to user voice/text commands.",
-      image: "/src/assets/rmp.jpeg",
+      image: rmp,
       technologies: ["Python", "OpenAI", "FastAPI", "React", "PostgreSQL"],
       category: "AI Development",
       gradient: "from-secondary to-secondary-glow",
@@ -31,7 +34,7 @@ const ProjectsSection = () => {
       title: "SeenaDsaviour",
       description:
         "A powerful cross-platform mobile application for schools and colleges, designed to streamline LMS operations by tracking student performance, monitoring activities, and managing teacher feedback—all in one place.",
-      image: "/src/assets/sds.jpeg",
+      image: sds,
       technologies: [
         "React Native",
         "Firebase",
